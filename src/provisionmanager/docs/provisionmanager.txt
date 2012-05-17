@@ -1,0 +1,83 @@
+Using the provision manager
+===========================
+
+This module let admins to do provisioning of users in applications 
+
+There are 2 use cases for provisioning of users:
+ * Use Case 1. Select a user and provisión him on apps  (http://www.youtube.com/watch?v=sKZlheDoLjw)
+ * Use Case 2. Allow to check the status of the users of the defined authsource in the app. (Show if is registered or not) 
+               (http://www.youtube.com/watch?v=jj3-zJ8HXFE)
+
+Not all users can execute those actions, the provision manager require a valid logged user (authenticate against the IdP source) that exists in the "allowed_admins" array of the configuration file.
+
+
+Dependencies
+------------
+
+    * attributecollector. Used to retrieve user data from LDAPs or Databases (svn co https://forja.rediris.es/svn/confia/attributecollector/trunk).
+    * attributequeryserver. Used to recieve the AttributeQuery Request, build the assertion and send the Attribute Query Response.
+
+
+Configuration
+-------------
+
+There is an example config template at the config-templates folder.
+
+$config = array(
+
+// Authentication source that protect the configuration view
+  'auth' => 'admin',
+
+// List of apps
+  'apps' => 
+      array (
+        'examlple1' => array(
+            // Url of the endpoint where is located the provision logic
+            'endpoint' => 'https://example.com/example1/provision.php',
+            // entityId of the SP that protect the provision view of the app
+            'SPentityID' => 'https://example.com/simplesaml/module.php/saml/sp/metadata.php/examlple1',
+            // Source with the data of the users for provisioning in the app, require a valid source defined at the attributequery config file
+            'attributeSource' => 'attribute_source1',
+            // URL that return a JSON with the userID of the registered users on the app
+            'users' => 'https://sined.yaco.es/demoapp1/get_users.php',
+        ),
+        'examlple2' => array(
+            'endpoint' => 'https://example.com/example1/provision.php',
+            'SPentityID' => 'https://example.com/simplesaml/module.php/saml/sp/metadata.php/examlple2',
+            'attributeSource' => 'attribute_source2',
+            'users' => 'https://sined.yaco.es/demoapp2/get_users.php',
+        ),
+      ),
+
+// admin ID field      
+  'admin_attr_id' => 'uid',
+
+// Array of allowed admins, the value of the user ID field must match any attribute of the list to get permission for the provisionmanager views execution
+  'allowed_admins' =>
+      array (
+        0 => 'admin',
+        1 => 'user1',
+      ),
+
+);
+
+
+Exists a web interface to add/change/delete the configuration of the applications. There is a link available at the "federation" tab: "Access to the configuration of the manager for provisioning".  Changes in this view modify the config file if the module_provisionmanager.php file of the config folder is writable.
+
+
+Notes
+-----
+
+In order to be able to do provisioning of users in an app, the app must be protected by a Service Provider, this view must:
+
+ * Recieve the userID of an user.
+ * Build an Attribute Query Request
+ * Recieve an Attribute Query Response
+ * Load internal library of the application where user logic is located and use those functions to register/unregister the user based on the SAML attribute
+   assertion.
+
+The Use Case 2 require the param 'users', that is a URL that retrieve a JSON with the userID of the users thar are registered on the app. 
+This info is needed to inform about the status in order to allow the provisoning/deprovisioning action.
+
+
+

@@ -1,0 +1,26 @@
+
+#helpConfigurationFile {
+    display:inline;
+    padding-left:5px;
+}
+
+.enablebox table thead tr {
+    text-align: center;
+    font-weight:bold;
+    vertical-align: middle;
+}
+
+.consumer {
+    margin-bottom: 20px;
+}
+
+.helper {
+    text-decoration: none;
+    text-align: center;
+}
+
+#mode_link {
+    padding-top: 15px;
+    float: right;
+}
+

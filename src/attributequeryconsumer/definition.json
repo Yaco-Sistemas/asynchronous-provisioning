@@ -1,0 +1,20 @@
+{
+        "id"                    : "attributequeryconsumer",
+        "name"                  : "Attribute Query Consumer",
+        "descr"                 : "Attribute Query Consumer Manager for simpleSAMLphp.",
+
+        "definition"    : "<url> /attributequeryconsumer/definition.json",
+        "branch"        : "dev",
+
+        "dependencies"  : ["saml"],
+
+        "access"                : {
+                "dev"           : {
+                        "type"          : "svn",
+                        "version"       : "0.1",
+                        "url"           : "<url> /attributequeryconsumer"
+                }
+        }
+
+}
+

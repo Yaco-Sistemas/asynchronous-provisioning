@@ -1,0 +1,98 @@
+{
+    "login": {
+		"es": "Acceder"
+	},
+    "main_panel": {
+        "es": "Gestor de Provisión de usuarios"
+    },
+    "link_configure": {
+        "es": "Acceder a la configuración del Gestor de Provisión de usuarios"
+    },
+    "link_provisioner": {
+        "es": "Acceder a panel del Gestor de Provisión de usuarios"
+    },
+    "link_provisioner2": {
+        "es": "Acceder a panel del Gestor de Provisión de usuarios (Caso de Uso 2)"
+    },
+    "link_return": {
+        "es": "Volver"
+    },
+    "parameter": {
+        "es": "Parámetro"
+    },
+    "value": {
+        "es": "Valor"
+    },
+    "attr_sources_title": {
+        "es": "Información sobre las fuentes de atributos disponibles"
+    },
+    "help_configuration_file": {
+		"es": "Los párametros de configuración se almacenan en el archivo de configuración module_provisionmanager.php que se encuentra en el directorio de configuraciones de simpleSAMLphp, generalmente es el directorio 'config. (Para que se guarden los datos es necesario tener permisos de escritura en ese directorio).'"
+	},
+    "help_auth": {
+		"es": "Fuente de autenticación que protege el Gestor de provisión de usuarios. ej. 'admin'"
+	},
+    "help_admin_attr_id": {
+        "es": "Atributo utilizado para identificar los usuarios admin"
+    },
+    "help_allowed_admins": {
+        "es": "Lista de administradores, el valor del campo 'admin_attr_id' del usuario logado debe coincidir con algun valor de la lista (valores separados por comas)"
+    },
+    "help_name": {
+		"es": "Identificador de la aplicación"
+	},
+    "help_attribute_source": {
+		"es": "Identificador de la fuente de atributos"
+	},
+    "help_spentityid": {
+		"es": "EntityID del SP que proteje la aplicación"
+	},
+    "help_endpoint": {
+		"es": "URL donde se aloja el servicio que consume los atributos (Vista donde se provisionan usuarios en la aplicación)"
+	},
+   "help_users": {
+		"es": "URL donde se espera se devuelva un JSON con los userID de los usuarios registrados en la aplicación"
+	},
+    "shown": {
+		"es": "Mostrar"
+	},
+    "hidden": {
+		"es": "Ocultar"
+	},
+    "app_provision_title": {
+        "es":  "Aplicaciones en las que provisionar usuarios"
+    },
+    "form_errors": {
+        "es": "Hay errores en el formulario, todos los campos son obligatorios"
+    },
+    "save": {
+        "es": "Guardar"
+    },
+    "help_nowritable": {
+        "es": "No puede editar la configuración. No tiene permisos de escritura en el archivo de configuración"
+    },
+    "config_saved": {
+        "es": "Configuración guardada con éxito"
+    },
+    "config_unsaved": {
+        "es": "Hubo un problema y la configuración no pudo ser guardada"
+    },
+    "select_user_source": {
+		"es": "Selecciona una fuente de usuarios"
+	},
+    "select_app": {
+        "es": "Selecciona una aplicación"
+    },
+    "select_user": {
+		"es": "Seleccione el usuario que quiere provisionar"
+	},
+    "source_user_status": {
+		"es": "Estado en la aplicación de los usuarios de la fuente"
+	},    
+    "provision": {
+		"es": "Provisionar"
+	},
+    "select": {
+		"es": "Seleccionar"
+	}
+}

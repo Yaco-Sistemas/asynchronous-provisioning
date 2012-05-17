@@ -1,0 +1,138 @@
+    
+#helpConfigurationFile {
+    display:inline;
+    padding-left:5px;
+}
+
+.enablebox table {
+    width: 80%;
+}
+
+.enablebox table thead tr {
+    text-align: center;
+    font-weight:bold;
+    vertical-align: middle;
+}
+
+.node {
+    margin-bottom: 20px;
+}
+
+.helper {
+    text-decoration: none;
+    text-align: center;
+}
+
+.attrsources {
+    margin-bottom: 20px;
+}
+
+
+.attrsources td{
+    vertical-align: top;
+}
+
+#attributeSourcesShown {
+    cursor: pointer;
+    font-weight: normal;
+    display: none;
+}
+#attributeSourcesHidden {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+.app_title {
+    width: 380px;
+    padding-bottom: 8px;
+}
+
+.clonable {
+    padding-top: 20px;
+}
+
+.action_button {
+    float: right;
+    background: url("images/btn_left_grey.png") no-repeat scroll left top transparent;
+    line-height: 16px;
+    padding: 0 1px 0 5px;
+    display: block;
+    margin-right: 2%;
+}
+
+input.error {
+    border: 1px solid red;
+}
+
+.error_msg {
+    padding-right: 20%;
+    padding-top: 5px;
+    display: none;
+    float: right;
+    color: red;
+}
+
+.error_msg img {
+    float: left;
+    margin: 1px 10px 0 0;
+}
+
+.error_msg span {
+    display: inline;
+}
+
+.action_button:hover {
+    background-position: left bottom;
+}
+
+.action_button a {
+    padding: 4px 13px 4px 4px;
+    display: block;
+    float: none;
+    background: url("images/btn_grey.png") no-repeat scroll right top transparent;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.action_button a:hover {
+    background-position: right bottom;
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 0px !important;
+}
+
+#cloneAction {
+    display: block;
+    color: #3C8411;
+    text-indent: 20px;
+    background: url("images/add.png") no-repeat scroll left center transparent;
+}
+
+.delete {
+
+    display: block;
+    color: red;
+    text-indent: 20px;
+    background: url("images/delete.png") no-repeat scroll left center transparent;
+}
+
+.attributes {
+    display: none;
+}
+
+.linkshown {
+    cursor: pointer;
+    font-weight: normal;
+}
+.linkhidden {
+    font-weight: normal;
+    cursor: pointer;
+    display: none;
+}
+
+

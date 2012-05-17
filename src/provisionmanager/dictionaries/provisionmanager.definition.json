@@ -1,0 +1,98 @@
+{
+    "login": {
+		"en": "Login"
+	},
+    "main_panel": {
+        "en": "Manager for Provisioning"
+    },
+    "link_configure": {
+        "en": "Access to  the configuration of the manager for provisioning"
+    },
+    "link_provisioner": {
+        "en": "Access to the panel of the manager for provisioning"
+    },
+    "link_provisioner2": {
+        "en": "Access to the panel of the manager for provisioning (Use Case 2)"
+    },
+    "link_return": {
+        "en": "Return"
+    },
+    "parameter": {
+        "en": "Parameter"
+    },
+    "value": {
+        "en": "value"
+    },
+    "attr_sources_title": {
+        "en": "Info about Available Attribute Sources"
+    },
+    "help_configuration_file": {
+		"en": "The config params are stored at the config file: module_provisionmanager.php that is located at the simpleSAMLphp's config directory, default directory is 'config'. (In order to edit the form, write permission are required)"
+	},
+    "help_auth": {
+		"en": "Authentication source that protect the Manager. ex 'admin'"
+	},
+    "help_admin_attr_id": {
+        "en": "Attribute used to identify admin users. ex uid"
+    },
+    "help_allowed_admins": {
+        "en": "Array of allowed admins, the value of the admin_attr_id's logged user field must match any attribute of the list to get permission for provision. (coma separated values)"
+    },
+    "help_name": {
+		"en": "App ID"
+	},
+    "help_attribute_source": {
+		"en": "Attribute source ID"
+	},
+    "help_spentityid": {
+		"en": "EntityID of the SP that protect the App"
+	},
+    "help_endpoint": {
+		"en": "Attribute Consumer Service endpoint (view for provisioning user in the app)"
+	},
+   "help_users": {
+		"en": "URL that return a JSON with the userIDs of the registered users on the app"
+	},
+    "shown": {
+		"en": "Show"
+	},
+    "hidden": {
+		"en": "Hide"
+	},
+    "app_provision_title": {
+        "en":  "Apps where do user provisioning"
+    },
+    "form_errors": {
+        "en": "Form has errors, all fields are required."
+    },
+    "save": {
+        "en": "Save"
+    },
+    "help_nowritable": {
+        "en": "You can not edit the configuration. Required writable permission on the config file"
+    },
+    "config_saved": {
+        "en": "Settings saved successfully"
+    },
+    "config_unsaved": {
+        "en": "There was a problem and the settings could not be saved"
+    },
+    "select_user_source": {
+		"en": "Select a source of users"
+	},
+    "select_app": {
+        "en": "Select an app"
+    },
+    "select_user": {
+		"en": "Select an user for provisioning"
+	},
+    "source_user_status": {
+		"en": "Status of users from the source at the app"
+	},   
+    "provision": {
+		"en": "Provision"
+	},
+    "select": {
+		"en": "Select"
+	}
+}

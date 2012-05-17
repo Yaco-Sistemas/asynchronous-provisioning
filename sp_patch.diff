@@ -1,0 +1,21 @@
+Index: lib/SAML2/SOAPClient.php
+===================================================================
+--- lib/SAML2/SOAPClient.php	(revisión: 3027)
++++ lib/SAML2/SOAPClient.php	(copia de trabajo)
+@@ -54,7 +54,7 @@
+ 				}
+ 			}
+ 		}
+-
++/*
+ 		// do peer certificate verification
+ 		if ($dstMetadata !== NULL) {
+ 			$peerPublicKeys = $dstMetadata->getPublicKeys('signing', TRUE);
+@@ -76,6 +76,7 @@
+ 			$ctxOpts['ssl']['verify_depth'] = 1;
+ 			$ctxOpts['ssl']['cafile'] = $peerCertFile;
+ 		}
++*/
+ 
+ 		$context = stream_context_create($ctxOpts);
+ 		if ($context === NULL) {

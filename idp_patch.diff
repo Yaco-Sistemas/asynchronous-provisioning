@@ -1,0 +1,24 @@
+Index: modules/saml/lib/IdP/SAML2.php
+===================================================================
+--- modules/saml/lib/IdP/SAML2.php	(revisión: 3027)
++++ modules/saml/lib/IdP/SAML2.php	(copia de trabajo)
+@@ -629,8 +629,9 @@
+ 	 * @param array &$state  The state array with information about the request.
+ 	 * @return SAML2_Assertion  The assertion.
+ 	 */
+-	private static function buildAssertion(SimpleSAML_Configuration $idpMetadata,
++	public static function buildAssertion(SimpleSAML_Configuration $idpMetadata,
+ 		SimpleSAML_Configuration $spMetadata, array &$state) {
++
+ 		assert('isset($state["Attributes"])');
+ 		assert('isset($state["saml:ConsumerURL"])');
+ 
+@@ -768,7 +769,7 @@
+ 	 * @param SAML2_Assertion $assertion  The assertion we are encrypting.
+ 	 * @return SAML2_Assertion|SAML2_EncryptedAssertion  The assertion.
+ 	 */
+-	private static function encryptAssertion(SimpleSAML_Configuration $idpMetadata,
++	public static function encryptAssertion(SimpleSAML_Configuration $idpMetadata,
+ 		SimpleSAML_Configuration $spMetadata, SAML2_Assertion $assertion) {
+ 
+ 		$encryptAssertion = $spMetadata->getBoolean('assertion.encryption', NULL);

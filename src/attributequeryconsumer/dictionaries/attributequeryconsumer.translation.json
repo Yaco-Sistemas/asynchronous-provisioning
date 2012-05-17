@@ -1,0 +1,95 @@
+{
+    "login": {
+        "es": "Acceder"
+    },
+    "link_panel": {
+        "es": "Gestor del Consumidor de Consultas de Atributos"
+    },
+    "link_configure": {
+        "es": "Ver configuración"
+    },
+    "link_exampletest": {
+        "es": "Ejecutar un test de Consulta de Atributos"
+    },
+    "link_return": {
+        "en": "Volver"
+    },
+    "consumers": {
+        "es": "Consumidores"
+    },
+    "parameter": {
+        "es": "Parámetro"
+    },
+    "value": {
+        "es": "Valor"
+    },
+    "select_spsource": {
+        "es": "Seleccione fuente de autenticación SP"
+    },
+    "help_configuration_file": {
+		"es": "Los párametros de configuración se almacenan en el archivo de configuración module_attributequeryconsumer.php que se encuentra en el directorio de configuraciones de simpleSAMLphp, generalmente es el directorio 'config'"
+	},
+    "help_auth": {
+		"es": "Fuente de autenticación que protege al Gestor web. ej. 'admin'"
+	},
+    "help_sp_source": {
+		"es": "Fuente de Autenticación SAML utilizada para enviar la Consulta de Atributos. La fuente de autenticación debe estar definida, generalmente esto se hace en el fichero authsources.php que hay que alojar en el direcotorio de configuración de simpleSAMLphp"
+	},
+    "help_aqs_url": {
+		"es": "URL del servidor de Consulta de Atributos"
+	},
+    "help_test_aqs_url": {
+		"es": "URL para pruebas del servidor de Consulta de Atributos"
+	},
+    "help_admin_attr_id": {
+		"es": "Atributo que identifica a los usuarios admin"
+	},
+    "help_allowed_admins": {
+		"es": "Lista de los administradores permitidos. El valor del campo identificador del usuario tiene que coincidir con alguno de los valores de la lista para obtener permisos para poder ejecutar la consulta de atributos"
+	},
+    "exampletest_title": {
+        "es": "Test de Consulta de Atributos"
+    },
+    "exampletest_desc": {
+        "es": "Esta es una página para testear el envío de mensajes AttributeQuery"
+    },
+    "send_query_button": {
+        "es": "Enviar Consulta"
+    },
+    "data_request": {
+        "es": "Parámetros de la petición"
+    },
+    "simple_query": {
+        "es": "Cambiar a vista de Consulta Simple"
+    },
+    "complex_query": {
+        "es": "Cambiar a vista de Consulta Compleja"
+    },
+    "help_nameid_format": {
+        "es": "Formato del NameID"
+    },
+    "help_nameid_value": {
+        "es": "Valor del NameID"
+    },
+    "help_namequalifer": {
+        "es": "NameID NameQualifier (opcional)"
+    },
+    "help_spnamequalifer": {
+        "es": "NameID SPNameQualifier (opcional)"
+    },
+    "help_attributelist": {
+        "es": "Lista de atributos (opcional. Dejar el campo vació para obtenerlos todos. Formato ejemplo: uid, mail, cn)"
+    },
+    "help_spsource": {
+        "es": "id de fuente de autenticación SP"
+    },
+    "not_consumers": {
+        "es": "No ha definido consumidores"
+    },
+    "undefined_test_url": {
+        "es": "No definida, establecela en el archivo de configuración o cambia a la consulta compleja"
+    },
+    "attr_received": {
+        "es": "Atributos recibidos"
+    }
+}

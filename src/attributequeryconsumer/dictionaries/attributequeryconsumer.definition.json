@@ -1,0 +1,95 @@
+{
+    "login": {
+		"en": "Login"
+	},
+    "link_panel": {
+        "en": "Attribute Query Consumer Manager"
+    },
+    "link_configure": {
+        "en": "Show configuration"
+    },
+    "link_exampletest": {
+        "en": "Execute an Attribute Query Test"
+    },
+    "link_return": {
+        "en": "Return"
+    },
+    "consumers": {
+        "en": "Consumers"
+    },
+    "parameter": {
+        "en": "Parameter"
+    },
+    "value": {
+        "en": "value"
+    },
+    "select_spsource": {
+        "en": "Select authentication SP source"
+    },
+    "help_configuration_file": {
+		"en": "The config params are stored at the config file: module_attributequeryconsumer.php that is located at the simpleSAMLphp's config directory, default directory is 'config'"
+	},
+    "help_auth": {
+		"en": "Authentication source that protect the Manager. ex 'admin'"
+	},
+    "help_sp_source": {
+		"en": "SAML autentication source used to send the Attribute Query. The authenication source must be defined, default file to define it is the authsources.php file that must be located at the simpleSAMLphp's config directory "
+	},
+    "help_aqs_url": {
+		"en": "URL of the Attribute Query Server"
+	},
+    "help_test_aqs_url": {
+		"en": "URL for the testing of the Attribute Query Server"
+	},
+    "help_admin_attr_id": {
+		"en": "admin ID field"
+	},
+    "help_allowed_admins": {
+		"en": "Array of allowed admins. The value of the user ID field must match any value of the list to get permission in order to execute an attribute query"
+	},
+    "exampletest_title": {
+        "en": "Attribute Query Test"
+    },
+    "exampletest_desc": {
+        "en": "This is a test page for sending an AttributeQuery message."
+    },
+    "send_query_button": {
+        "en": "Send Query"
+    },
+    "data_request": {
+        "en": "Parameters of the request"
+    },
+    "simple_query": {
+        "en": "Change to Simple Query view"
+    },
+    "complex_query": {
+        "en": "Change to Complex Query view"
+    },
+    "help_nameid_format": {
+        "en": "NameID format"
+    },
+    "help_nameid_value": {
+        "en": "NameID value"
+    },
+    "help_namequalifer": {
+        "en": "NameID NameQualifier (optional)"
+    },
+    "help_spnamequalifer": {
+        "en": "NameID SPNameQualifier (optional)"
+    },
+    "help_attributelist": {
+        "en": "Attribute List (optional, Leave blank to request all. Format example: uid, mail, cn)"
+    },
+    "help_spsource": {
+        "en": "SP authentication source id"
+    },
+    "not_consumers": {
+        "en": "Consumers are not defined"
+    },
+    "undefined_test_url": {
+        "en": "Undefined, set it at configure file or change to Complex Query view"
+    },
+    "attr_received": {
+        "en": "Attributes received"
+    }
+}
